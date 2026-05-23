@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThisOrThat Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #080814;
+      --panel: rgba(255, 255, 255, 0.08);
+      --text: #ffffff;
+      --muted: rgba(255, 255, 255, 0.72);
+      --border: rgba(255, 255, 255, 0.16);
+      --accent: #dfc799;
+      --link: #7fb4ff;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(64, 128, 230, 0.28), transparent 34rem),
+        radial-gradient(circle at bottom right, rgba(126, 67, 202, 0.30), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(760px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: clamp(24px, 5vw, 44px);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.30);
+      backdrop-filter: blur(18px);
+    }
+
+    h1, h2 {
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(34px, 8vw, 56px);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 20px;
+      margin-top: 32px;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--link);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>ThisOrThat Support</h1>
+
+      <h2>Contact</h2>
+      <p>
+        Trendi Studios:
+        <a href="mailto:trendistudiosofficial@gmail.com">trendistudiosofficial@gmail.com</a>
+      </p>
+
+      <h2>Privacy Policy</h2>
+      <p>
+        <a href="privacy-policy.html">ThisOrThat Privacy Policy</a>
+      </p>
+    </article>
+  </main>
+</body>
+</html>
